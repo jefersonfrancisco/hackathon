@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { DeliveryComponent } from './components/delivery/delivery.component';
 import { CustomerService } from './services/customer.service';
-import { DeliveryService } from './services/delivery.service';
+import { TripService } from './services/trip.service';
 
 
 @NgModule({
@@ -25,7 +25,7 @@ import { DeliveryService } from './services/delivery.service';
     AppRoutingModule, 
     NgbModule.forRoot()    
   ],
-  providers: [CustomerService, DeliveryService],
+  providers: [CustomerService, TripService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
