@@ -1,21 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { Router, ActivatedRoute } from '@angular/router';
-import { CustomerService } from './customer.service';
+import { DeliveryService } from '../../services/delivery.service';
 
 @Component({
-  selector: 'app-customer',
-  templateUrl: './customer.component.html',
-  styleUrls: ['./customer.component.css']
+  selector: 'app-delivery',
+  templateUrl: './delivery.component.html',
+  styleUrls: ['./delivery.component.css']
 })
-export class CustomerComponent implements OnInit {
+export class DeliveryComponent implements OnInit {
 
   inscription: Subscription;
   code: string;
 
   constructor(private route: ActivatedRoute,
               private router: Router,
-              private service: CustomerService) { }
+              private service: DeliveryService) { }
 
   ngOnInit() {
     this.inscription = this.route.params.subscribe(

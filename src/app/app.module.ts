@@ -1,14 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DeliveryComponent } from './delivery/delivery.component';
-import { CustomerComponent } from './customer/customer.component';
-import { CustomerService } from './customer/customer.service';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CustomerComponent } from './components/customer/customer.component';
+import { DeliveryComponent } from './components/delivery/delivery.component';
+import { CustomerService } from './services/customer.service';
+import { DeliveryService } from './services/delivery.service';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule, 
     NgbModule.forRoot()    
   ],
-  providers: [CustomerService],
+  providers: [CustomerService, DeliveryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,8 @@
-import { Routes, RouterModule } from "@angular/router";
-import { DeliveryComponent } from './delivery/delivery.component';
-import { CustomerComponent } from './customer/customer.component';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
+import { RouterModule, Routes } from '@angular/router';
+
+import { CustomerComponent } from './components/customer/customer.component';
+import { DeliveryComponent } from './components/delivery/delivery.component';
 
 const APP_ROUTES: Routes = [
     { path: 'delivery/:id', component: DeliveryComponent },
