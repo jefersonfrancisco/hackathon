@@ -1,0 +1,14 @@
+application.category=SYSTEM
+application.code=transmart_app
+application.title=TranSmart App
+application.description=TranSmart App
+application.icon=icon.png
+application.renderer=freemarker
+application.type=layout
+application.uilayout=true
+developer.code=TOTVS
+developer.name=TOTVS S.A.
+developer.url=http\://www.totvs.com
+layout.file=view.ftl
+locale.file.base.name=transmart_app
+simple.deploy=true
